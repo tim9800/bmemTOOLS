@@ -5,4 +5,4 @@
 .gitignore
 .Rbuildignore
 bmemTOOLS.Rproj
-pkg_guide.Rmd
+*.Rmd
