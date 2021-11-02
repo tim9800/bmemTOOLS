@@ -17,3 +17,5 @@ Imports:
     mitools,
     stats,
     texreg
+URL: https://github.com/tim9800/bmemTOOLS
+BugReports: https://github.com/hadley/dplyr/issues
