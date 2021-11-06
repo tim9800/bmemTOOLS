@@ -142,7 +142,7 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
 
     pooled3 <- pool(regr3)
     pooled3s <- pool(regr3s)
-    R3 <- mean(pooled3$glanced$r.squared)
+    R3 <- mean(pooled3$glanced$r.squared) - R2 - R1
     F3 <- Fru(mids, outcome, predictors3, setdiff(predictors3, predictors2))
     sum3 <- summary(pooled3)
 
