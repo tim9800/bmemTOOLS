@@ -123,7 +123,8 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
 
     disp <- list(tex1,tex1s,tex1t,tex1p,tex2,tex2s,tex2t,tex2p)
     screen <- htmlreg(disp, file = file_out, digits = 3, single.row = F, leading.zero = F,
-                      custom.header = list("Demographics" = 1:4, "+ Performance EF" = 5:8),
+                      custom.header = list("Step 1: Demographics" = 1:4,
+                                           "Step 2: + Performance EF" = 5:8),
                       custom.model.names = c("b", "Beta", "t(df)", "p",
                                              "b", "Beta", "t(df)", "p"),
                       omit.coef = "Intercept")
@@ -180,7 +181,9 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
     }
     disp <- list(tex1,tex1s,tex1t,tex1p,tex2,tex2s,tex2t,tex2p,tex3,tex3s,tex3t,tex3p)
     screen <- htmlreg(disp, file = file_out, digits = 3, single.row = F, leading.zero = F,
-                      custom.header = list("Demographics" = 1:4, "+ Performance EF" = 5:8, "+ Self-report EF" = 9:12),
+                      custom.header = list("Step 1: Demographics" = 1:4,
+                                           "Step 2: + Performance EF" = 5:8,
+                                           "Step 3: + Self-report EF" = 9:12),
                       custom.model.names = c("b", "\U03B2", "t(df)", "p",
                                              "b", "\U03B2", "t(df)", "p",
                                              "b", "\U03B2", "t(df)", "p"),
