@@ -11,7 +11,7 @@ Converts SRS raw scores into T scores.
 Converts BRIEF raw scores into T scores.
 
 # niceout()
-Relies mainly on miceadds (analysis) and texreg (output formatting) to perform regressions on multiply-imputed data. Formatted regression tables are output in .html format and sent to a location of choice. Current statistics in the output are:
+Relies mainly on miceadds (analysis) and texreg (output formatting) to perform hierarchical regressions on multiply-imputed data. Currently supports up to three separate regression steps. Formatted regression tables are output in .html format and sent to a location of choice. Current statistics in the output are:
   - Standardised (beta) and unstandardised (b) regression coefficients
   - Standard error of the unstandardised regression coefficients
   - t-statistic, with degrees of freedom
