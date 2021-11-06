@@ -31,7 +31,8 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
   regr1 <- with(mids, expr={
     lm(as.formula(eq1))
   })
-  eq1s <- paste(outcome, " ~ ", paste0("scale(", predictors1, ")", collapse = " + "))
+  eq1s <- paste(paste0("scale(", outcome, ")"), " ~ ",
+                paste0("scale(", predictors1, ")", collapse = " + "))
   regr1s <- with(mids, expr={
     lm(as.formula(eq1s))
   })
@@ -74,7 +75,8 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
   regr2 <- with(mids, expr={
     lm(as.formula(eq2))
   })
-  eq2s <- paste(outcome, " ~ ", paste0("scale(", predictors2, ")", collapse = " + "))
+  eq2s <- paste(paste0("scale(", outcome, ")"), " ~ ",
+                paste0("scale(", predictors2, ")", collapse = " + "))
   regr2s <- with(mids, expr={
     lm(as.formula(eq2s))
   })
@@ -132,7 +134,8 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
     regr3 <- with(mids, expr={
       lm(as.formula(eq3))
     })
-    eq3s <- paste(outcome, " ~ ", paste0("scale(", predictors3, ")", collapse = " + "))
+    eq3s <- paste(paste0("scale(", outcome, ")"), " ~ ",
+                  paste0("scale(", predictors3, ")", collapse = " + "))
     regr3s <- with(mids, expr={
       lm(as.formula(eq3s))
     })
