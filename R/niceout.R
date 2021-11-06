@@ -48,11 +48,11 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
     coef = sum1$estimate,
     se = sum1$std.error,
     pvalues = sum1$p.value,
-    gof.names = c("R2 change",
-                  "F-change",
-                  "sig. F-change",
-                  "df1 F-change",
-                  "df2 F-change"),
+    gof.names = c(paste0("R","\U00B2"," change"),
+                  paste0("\U0394"," F"),
+                  paste0("sig. F"),
+                  paste0("df1 F"),
+                  paste0("df2 F")),
     gof = c(R1, F1$stat$F, F1$stat$pval, round(F1$stat$df1), round(F1$stat$df2)),
     gof.decimal = c(T,T,T,F,F)
   )
@@ -92,11 +92,11 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
     coef = sum2$estimate,
     se = sum2$std.error,
     pvalues = sum2$p.value,
-    gof.names = c("R2 change",
-                  "F-change",
-                  "sig. F-change",
-                  "df1 F-change",
-                  "df2 F-change"),
+    gof.names = c(paste0("R","\U00B2"," change"),
+                  paste0("\U0394"," F"),
+                  paste0("sig. F"),
+                  paste0("df1 F"),
+                  paste0("df2 F")),
     gof = c(R2, F2$stat$F, F2$stat$pval, round(F2$stat$df1), round(F2$stat$df2)),
     gof.decimal = c(T,T,T,F,F)
   )
@@ -152,11 +152,11 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
       coef = sum3$estimate,
       se = sum3$std.error,
       pvalues = sum3$p.value,
-      gof.names = c("R2 change",
-                    "F-change",
-                    "sig. F-change",
-                    "df1 F-change",
-                    "df2 F-change"),
+      gof.names = c(paste0("R","\U00B2"," change"),
+                    paste0("\U0394"," F"),
+                    paste0("sig. F"),
+                    paste0("df1 F"),
+                    paste0("df2 F")),
       gof = c(R3, F3$stat$F, F3$stat$pval, round(F3$stat$df1), round(F3$stat$df2)),
       gof.decimal = c(T,T,T,F,F)
     )
@@ -184,9 +184,9 @@ niceout <- function (mids, filename, outcome, predictors1, predictors2, predicto
                       custom.header = list("Step 1: Demographics" = 1:4,
                                            "Step 2: + Performance EF" = 5:8,
                                            "Step 3: + Self-report EF" = 9:12),
-                      custom.model.names = c("b", "\U03B2", "t(df)", "p",
-                                             "b", "\U03B2", "t(df)", "p",
-                                             "b", "\U03B2", "t(df)", "p"),
+                      custom.model.names = c("b", "Beta", "t(df)", "p",
+                                             "b", "Beta", "t(df)", "p",
+                                             "b", "Beta", "t(df)", "p"),
                       omit.coef = "Intercept")
     return(screen)
   }
