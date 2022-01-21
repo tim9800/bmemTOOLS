@@ -11,7 +11,7 @@ Converts raw SRS (Social Responsiveness Scale 2) scores into age-normed T scores
 Converts raw BRIEF (Behavior Rating Inventory of Executive Function - Adult) scores into age-normed T scores.
 
 # niceout()
-Performs hierarchical regressions on multiply-imputed data. Depends on miceadds for analysis and texreg for regression table output. Currently supports up to three separate regression steps. Formatted regression tables are output in .html format and saved in a location of choice. Supported statistics include:
+Performs hierarchical regressions on multiply-imputed data. Depends on miceadds for analysis and texreg for regression table output. Currently supports up to three separate regression steps. Formatted regression tables are output in .html format and saved in a location of choice. Statistics included in output:
   - Standardised (beta) and unstandardised (b) regression coefficients
   - Standard error of the unstandardised regression coefficients
   - t-statistic and associated degrees of freedom
