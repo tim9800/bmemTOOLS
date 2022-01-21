@@ -2,19 +2,19 @@
 Complements the edited version of bmem, bmemEDIT. Works specifically with data from my honours thesis
 
 # Fru()
-Incorporates a code snippet from van Ginkel (2019) to calculate a pooled F statistic for multiply-imputed data. Output is included in niceout()
+Calculates a pooled F statistic for regressions conducted on multiply-imputed data. Incorporates a code snippet from van Ginkel (2019), see https://www.tandfonline.com/doi/full/10.1080/00273171.2018.1540967. The pooled F-statistic is included in calls to niceout().
 
 # SRS_convert_T()
-Converts SRS raw scores into T scores.
+Converts raw SRS (Social Responsiveness Scale 2) scores into age-normed T scores.
 
 # BRIEF_convert_T()
-Converts BRIEF raw scores into T scores.
+Converts raw BRIEF (Behavior Rating Inventory of Executive Function - Adult) scores into age-normed T scores.
 
 # niceout()
-Relies mainly on miceadds (analysis) and texreg (output formatting) to perform hierarchical regressions on multiply-imputed data. Currently supports up to three separate regression steps. Formatted regression tables are output in .html format and sent to a location of choice. Current statistics in the output are:
+Performs hierarchical regressions on multiply-imputed data, relying on miceadds and texreg. Currently supports up to three separate regression steps. Formatted regression tables are output in .html format and sent to a location of choice. Supported statistics include:
   - Standardised (beta) and unstandardised (b) regression coefficients
   - Standard error of the unstandardised regression coefficients
-  - t-statistic, with degrees of freedom
+  - t-statistic and associated degrees of freedom
   - p-values for regression coefficients
   - R-square change
   - F-test for R-square change, with degrees of freedom. See Fru()
